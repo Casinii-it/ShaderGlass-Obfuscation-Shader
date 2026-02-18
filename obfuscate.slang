@@ -1,5 +1,16 @@
 #version 450
 
+////////////////////////////////
+// ACTUAL SHADER PART AT BOTTOM
+
+
+
+
+
+
+
+
+
 //////////////////////////////////////////////////////////////////
 // you can define parameters of your shader in this section
 
@@ -49,6 +60,19 @@ layout(set = 0, binding = 2) uniform sampler2D Source;
 
 //uniform vec2 u_resolution;
 
+
+
+
+
+
+
+
+
+
+
+
+//THIS IS THE INTERESTING STUFF
+
 void main()
 {
    vec3 input_pixel = texture(Source, vTexCoord).rgb;
@@ -66,3 +90,4 @@ void main()
 
    FragColor = vec4(new_pixel, 1.0);
 }
+
